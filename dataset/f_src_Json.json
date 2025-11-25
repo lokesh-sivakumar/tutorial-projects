@@ -1,0 +1,43 @@
+{
+	"name": "f_src_Json",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adl",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "json_loop.json",
+				"fileSystem": "source"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"tables": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"schema": {
+								"type": "string"
+							},
+							"table": {
+								"type": "string"
+							},
+							"cdc_col": {
+								"type": "string"
+							},
+							"from_date": {
+								"type": "string"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
