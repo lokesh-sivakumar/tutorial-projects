@@ -1,5 +1,5 @@
 {
-	"name": "incremental_ingestion_loop",
+	"name": "spotify_incremental_ingestion_loop",
 	"properties": {
 		"activities": [
 			{
